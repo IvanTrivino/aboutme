@@ -13,6 +13,10 @@
 		2391326021C40F4B005FE823 /* AboutMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2391325E21C40F4B005FE823 /* AboutMe.xcdatamodeld */; };
 		2391326221C40F4C005FE823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2391326121C40F4C005FE823 /* Assets.xcassets */; };
 		2391326521C40F4C005FE823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2391326321C40F4C005FE823 /* LaunchScreen.storyboard */; };
+		2391327821C4182C005FE823 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2391327721C4182C005FE823 /* Profile.storyboard */; };
+		2391327A21C4186D005FE823 /* Skills.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2391327921C4186D005FE823 /* Skills.storyboard */; };
+		2391327C21C41882005FE823 /* Contact.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2391327B21C41882005FE823 /* Contact.storyboard */; };
+		2391327E21C4265F005FE823 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2391327D21C4265F005FE823 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		2391326121C40F4C005FE823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2391326421C40F4C005FE823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2391326621C40F4C005FE823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2391327721C4182C005FE823 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		2391327921C4186D005FE823 /* Skills.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Skills.storyboard; sourceTree = "<group>"; };
+		2391327B21C41882005FE823 /* Contact.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Contact.storyboard; sourceTree = "<group>"; };
+		2391327D21C4265F005FE823 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,91 @@
 		2391325621C40F4B005FE823 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
-				2391325721C40F4B005FE823 /* AppDelegate.swift */,
-				2391325921C40F4B005FE823 /* ViewController.swift */,
-				2391325B21C40F4B005FE823 /* Main.storyboard */,
-				2391326121C40F4C005FE823 /* Assets.xcassets */,
-				2391326321C40F4C005FE823 /* LaunchScreen.storyboard */,
-				2391326621C40F4C005FE823 /* Info.plist */,
-				2391325E21C40F4B005FE823 /* AboutMe.xcdatamodeld */,
+				2391327221C41112005FE823 /* Application */,
+				2391327121C410E2005FE823 /* Base */,
+				2391326C21C40F56005FE823 /* Resources */,
 			);
 			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		2391326C21C40F56005FE823 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2391326E21C41019005FE823 /* Assets */,
+				2391326D21C40F80005FE823 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2391326D21C40F80005FE823 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2391326E21C41019005FE823 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2391326121C40F4C005FE823 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2391327121C410E2005FE823 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2391325721C40F4B005FE823 /* AppDelegate.swift */,
+				2391326621C40F4C005FE823 /* Info.plist */,
+				2391326321C40F4C005FE823 /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2391327221C41112005FE823 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2391327621C4181D005FE823 /* Contact */,
+				2391327521C41816005FE823 /* Skills */,
+				2391327421C41807005FE823 /* Profile */,
+				2391327321C4112C005FE823 /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2391327321C4112C005FE823 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2391325921C40F4B005FE823 /* ViewController.swift */,
+				2391325B21C40F4B005FE823 /* Main.storyboard */,
+				2391325E21C40F4B005FE823 /* AboutMe.xcdatamodeld */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2391327421C41807005FE823 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2391327721C4182C005FE823 /* Profile.storyboard */,
+				2391327D21C4265F005FE823 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2391327521C41816005FE823 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				2391327921C4186D005FE823 /* Skills.storyboard */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		2391327621C4181D005FE823 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				2391327B21C41882005FE823 /* Contact.storyboard */,
+			);
+			path = Contact;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +209,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2391327A21C4186D005FE823 /* Skills.storyboard in Resources */,
+				2391327C21C41882005FE823 /* Contact.storyboard in Resources */,
 				2391326521C40F4C005FE823 /* LaunchScreen.storyboard in Resources */,
 				2391326221C40F4C005FE823 /* Assets.xcassets in Resources */,
 				2391325D21C40F4B005FE823 /* Main.storyboard in Resources */,
+				2391327821C4182C005FE823 /* Profile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +227,7 @@
 			files = (
 				2391326021C40F4B005FE823 /* AboutMe.xcdatamodeld in Sources */,
 				2391325A21C40F4B005FE823 /* ViewController.swift in Sources */,
+				2391327E21C4265F005FE823 /* ProfileViewController.swift in Sources */,
 				2391325821C40F4B005FE823 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AboutMe/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AboutMe/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AboutMe/Base/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
