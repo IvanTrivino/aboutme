@@ -22,7 +22,6 @@
                     <connections>
                         <segue destination="2ij-zD-vRQ" kind="relationship" relationship="viewControllers" id="ISM-Gf-3Yc"/>
                         <segue destination="1b0-g9-JAU" kind="relationship" relationship="viewControllers" id="LnN-ln-mfp"/>
-                        <segue destination="wK5-PN-nkO" kind="relationship" relationship="viewControllers" id="cBP-EZ-Ttj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g7b-XS-He6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -37,7 +36,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7pg-Xh-Qtp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-531" y="588"/>
+            <point key="canvasLocation" x="-322" y="587"/>
         </scene>
         <!--Skills-->
         <scene sceneID="xTo-vy-spn">
@@ -47,17 +46,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMu-Lo-7b9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79" y="587"/>
-        </scene>
-        <!--Contact-->
-        <scene sceneID="Bn9-rd-Uyf">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Contact" id="wK5-PN-nkO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="y7Y-eO-7Q9"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lVG-La-ug8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="366" y="587"/>
+            <point key="canvasLocation" x="169" y="587"/>
         </scene>
     </scenes>
 </document>
